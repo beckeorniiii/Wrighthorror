@@ -1620,22 +1620,4 @@ CONTROLLER: NOT DETECTED · Connect a PS4 or Xbox One controller, then press a b
     </script>
 </body>
 </html>
-<script>
-  // Forces the browser window to intercept pointer capture requests
-  document.addEventListener('click', function() {
-    const canvas = document.querySelector('canvas');
-    if (canvas) {
-      if (canvas.requestPointerLock) {
-        canvas.requestPointerLock();
-      } else if (canvas.mozRequestPointerLock) {
-        canvas.mozRequestPointerLock();
-      } else if (canvas.webkitRequestPointerLock) {
-        canvas.webkitRequestPointerLock();
-      }
-    }
-  });
-
-  // Keep the window explicitly focused inside your Google Sites layout
-  window.addEventListener('click', () => { window.focus(); });
-</script>
 
